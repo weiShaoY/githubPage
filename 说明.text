@@ -1,0 +1,77 @@
+这是一个 package.json 文件，用于描述一个前端项目的元数据，通常是用于 Node.js 项目的配置。这个项目使用了 Vue 3、Vite、TypeScript、ElementPlus、UnoCSS 等技术。以下是每个字段的详细解释：
+
+1. name
+	•	值: @sa/elp
+	•	描述: 该字段指定了项目的名称。一般来说，这个字段会被用来指定包的唯一标识符，特别是如果项目是一个 npm 包时。
+
+2. type
+	•	值: module
+	•	描述: 这个字段表示该项目使用 ECMAScript 模块（ESM）语法，支持使用 import 和 export。
+
+3. version
+	•	值: 1.3.11
+	•	描述: 该字段定义了项目的版本号，通常遵循语义化版本控制（SemVer），如 主版本号.次版本号.修订号。
+
+4. description
+	•	值: "A fresh and elegant admin template, based on Vue3、Vite3、TypeScript、ElementPlus and UnoCSS. 一个基于Vue3、Vite3、TypeScript、ElementPlus and UnoCSS的清新优雅的中后台模版。"
+	•	描述: 该字段提供项目的简短描述，向用户展示项目的功能或用途。
+
+5. author
+	•	对象: 包含关于作者的信息
+	•	name: "Soybean" - 作者的名字。
+	•	email: "soybeanjs@outlook.com" - 作者的电子邮件。
+	•	url: "https://github.com/soybeanjs" - 作者的 GitHub 主页。
+
+6. license
+	•	值: "MIT"
+	•	描述: 该字段表示项目的开源许可证。在这里是 MIT 许可证，意味着项目代码可以自由使用、修改和分发。
+
+7. homepage
+	•	值: "https://github.com/soybeanjs/soybean-admin"
+	•	描述: 该字段提供项目的主页或官方网站的 URL。
+
+8. repository
+	•	对象: 描述代码仓库的位置
+	•	url: "https://github.com/soybeanjs/soybean-admin.git" - 仓库的 URL，用于存取代码。
+
+9. bugs
+	•	对象: 提供报告问题的链接
+	•	url: "https://github.com/soybeanjs/soybean-admin/issues" - 提交问题或报告 bug 的 URL。
+
+10. keywords
+	•	数组: 包含与项目相关的关键词
+	•	如 "Vue3 admin", "vue-admin-template", "Vite5", "TypeScript", 等等。
+
+11. engines
+	•	对象: 定义项目所支持的 Node.js 和 pnpm 版本
+	•	node: ">=18.12.0" - 项目需要 Node.js 版本大于或等于 18.12.0。
+	•	pnpm: ">=8.7.0" - 项目需要 pnpm 版本大于或等于 8.7.0。
+
+12. scripts
+	•	对象: 定义了一些 npm 脚本，这些脚本可以通过 npm run <script-name> 来执行
+	•	build: "vite build --mode prod" - 构建生产版本。
+	•	dev: "vite --mode test" - 启动开发环境（测试模式）。
+	•	lint: "eslint . --fix" - 自动修复项目中的 ESLint 问题。
+	•	commit: "sa git-commit" - 执行 Git 提交操作。
+	•	release: "sa release" - 执行发布操作。
+
+13. dependencies
+	•	对象: 列出了该项目的生产依赖项
+	•	如 @antv/data-set, @antv/g2, element-plus 等包，项目运行时需要这些包。
+
+14. devDependencies
+	•	对象: 列出了该项目的开发依赖项
+	•	如 eslint, typescript, vite 等包，项目开发和构建时需要这些包。
+
+15. simple-git-hooks
+	•	对象: 配置 Git 钩子
+	•	commit-msg: 用于验证提交信息的脚本。
+	•	pre-commit: 在提交之前运行的命令，例如进行类型检查和修复 ESLint 问题。
+
+16. lint-staged
+	•	对象: 配置只对 Git 暂存区的文件执行 ESLint 检查和修复。
+	•	"*": 针对所有文件执行 eslint --fix，修复代码中的潜在问题。
+
+17. website
+	•	值: "https://elp.soybeanjs.cn"
+	•	描述: 该字段提供项目的在线展示或演示网站 URL。

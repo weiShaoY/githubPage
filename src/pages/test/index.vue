@@ -10,7 +10,7 @@ import Lynk from '@/canvas/lynk/index.vue'
     <div
       class="h-200 w-200"
     >
-      <Lynk />
+      11
     </div>
   </div>
 </template>

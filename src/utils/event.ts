@@ -1,9 +1,9 @@
 /**
  * 添加事件监听器
- * @param {Window | HTMLElement} target - 目标对象（窗口或 HTML 元素）
- * @param {string} event - 事件类型
- * @param {EventListenerOrEventListenerObject} handler - 事件处理函数
- * @param {boolean} [capture] - 是否在捕获阶段调用事件处理程序
+ * @param  target - 目标对象（窗口或 HTML 元素）
+ * @param  event - 事件类型
+ * @param  handler - 事件处理函数
+ * @param  capture - 是否在捕获阶段调用事件处理程序
  */
 export function addEventListen(
   target: Window | HTMLElement,
@@ -21,10 +21,10 @@ export function addEventListen(
 
 /**
  * 移除事件监听器
- * @param {Window | HTMLElement} target - 目标对象（窗口或 HTML 元素）
- * @param {string} event - 事件类型
- * @param {EventListenerOrEventListenerObject} handler - 事件处理函数
- * @param {boolean} [capture] - 是否在捕获阶段调用事件处理程序
+ * @param  target - 目标对象（窗口或 HTML 元素）
+ * @param  event - 事件类型
+ * @param  handler - 事件处理函数
+ * @param  capture - 是否在捕获阶段调用事件处理程序
  */
 export function removeEventListen(
   target: Window | HTMLElement,
